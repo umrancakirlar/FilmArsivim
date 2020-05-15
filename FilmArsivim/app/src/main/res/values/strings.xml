@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Film Arşivim</string>
+    <string-array name="Tur">
+        <item>Aksiyon</item>
+        <item>Bilim-Kurgu</item>
+        <item>Dram</item>
+        <item>Fantastik</item>
+        <item>Gerilim</item>
+        <item>Komedi</item>
+        <item>Korku</item>
+        <item>Macera</item>
+        <item>Romantik</item>
+        <item>Suç</item>
+
+    </string-array>
+</resources>

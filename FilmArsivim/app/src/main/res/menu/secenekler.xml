@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/film_izledim" android:title="Film İzledim"></item>
+    <item android:id="@+id/izlemek_istiyorum" android:title="Film İzlemek İstiyorum"></item>
+    <item android:id="@+id/cikis_yap" android:title="Çıkış Yap"></item>
+
+
+
+</menu>

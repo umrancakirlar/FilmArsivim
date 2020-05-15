@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "609732938923",
+    "firebase_url": "https://film-arsivim.firebaseio.com",
+    "project_id": "film-arsivim",
+    "storage_bucket": "film-arsivim.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:609732938923:android:e57ee16b817e4cb550fbee",
+        "android_client_info": {
+          "package_name": "com.example.filmarsivim"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "609732938923-df4tuva5dq2kjo5hbmjh10b1cl9djsnb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDix51S12jvNHhH5PD0DNnw6KPv-iV591k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "609732938923-df4tuva5dq2kjo5hbmjh10b1cl9djsnb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

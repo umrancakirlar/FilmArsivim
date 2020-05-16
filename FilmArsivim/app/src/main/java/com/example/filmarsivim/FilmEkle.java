@@ -75,9 +75,7 @@ public class FilmEkle extends AppCompatActivity implements AdapterView.OnItemSel
     }
 
     public void filmIzledim(View view){
-
         if (imageData != null) {
-
 
             UUID uuid = UUID.randomUUID();
             final String afis = "images/" + uuid + ".jpg";

@@ -4,116 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#0099c7"
     tools:context=".AnaSayfa">
 
-    <Button
-        android:id="@+id/izlediklerim"
+    <ImageButton
+        android:id="@+id/imageButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="17dp"
-        android:background="@color/colorPrimary"
         android:onClick="filmleriListele"
-        android:paddingLeft="7dp"
-        android:paddingRight="7dp"
-        android:text="İzledğim Filmler"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="120dp"
-        android:background="@color/colorPrimary"
-        android:onClick="istediklerimiListele"
-        android:paddingLeft="7dp"
-        android:paddingRight="7dp"
-        android:text="İzlemek istediğim filmler"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/izlediklerim" />
-
-    <Button
-        android:id="@+id/filmOnerisi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="75dp"
-        android:layout_marginBottom="24dp"
-        android:background="@color/colorPrimary"
-        android:onClick="filmOner"
-        android:paddingLeft="7dp"
-        android:paddingRight="7dp"
-        android:text="Film Öner"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/onerilenFilm"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/spinner"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/a" />
 
-    <TextView
-        android:id="@+id/onerilenFilm"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="6dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginBottom="121dp"
-        android:background="@color/colorPrimary"
-        android:gravity="center"
-        android:hint="Önerilen Film"
-        android:onClick="onerilenFilmiEkle"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="18sp"
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="405dp"
+        android:layout_height="310dp"
+        android:onClick="istediklerimiListele"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/filmOnerisi" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="6dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginBottom="22dp"
-        android:text="Film önerisi mi istiyorsun hangi tarzda film izlemek istediğini seç bizde sana film önerelim"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/filmOnerisi"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
-
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="7dp"
-        android:layout_marginEnd="38dp"
-        app:layout_constraintBottom_toBottomOf="@+id/filmOnerisi"
-        app:layout_constraintEnd_toStartOf="@+id/filmOnerisi"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/filmOnerisi" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="25dp"
-        android:text="Film listelrine burdan ulaşabilirsin"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/izlediklerim"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:srcCompat="@drawable/b" />
 </androidx.constraintlayout.widget.ConstraintLayout>

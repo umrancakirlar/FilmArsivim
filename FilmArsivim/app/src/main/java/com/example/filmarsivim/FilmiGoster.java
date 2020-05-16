@@ -4,7 +4,6 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -27,11 +26,6 @@ public class FilmiGoster extends AppCompatActivity {
     TextView filmAdi,filmTarih,filmHakkinda,filmTur;
     private FirebaseAuth firebaseAuth;
     private FirebaseFirestore firebaseFirestore;
-    private ArrayList<String> filmListesi;
-    private ArrayList<String> tarihListesi;
-    private ArrayList<String> hakkindaListesi;
-    private ArrayList<String> afisListesi;
-    private ArrayList<String> turListesi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,11 +38,7 @@ public class FilmiGoster extends AppCompatActivity {
         filmHakkinda=findViewById(R.id.filmHakkinda);
         filmTur=findViewById(R.id.filmTur);
 
-        filmListesi=new ArrayList<>();
-        afisListesi=new ArrayList<>();
-        tarihListesi=new ArrayList<>();
-        hakkindaListesi=new ArrayList<>();
-        turListesi=new ArrayList<>();
+
 
         firebaseFirestore=FirebaseFirestore.getInstance();
         firebaseAuth=FirebaseAuth.getInstance();
@@ -72,13 +62,6 @@ public class FilmiGoster extends AppCompatActivity {
                         String downloadUrl = (String) data.get("downloadurl");
                         String zaman = (String) data.get("filmtarih");
                         String tur=(String) data.get("filmtur");
-
-
-                        filmListesi.add(ad);
-                        afisListesi.add(downloadUrl);
-                        tarihListesi.add(zaman);
-                        hakkindaListesi.add(hakkinda);
-                        turListesi.add(tur);
 
 
                         filmAdi.setText(ad);
